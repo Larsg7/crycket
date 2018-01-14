@@ -1,0 +1,880 @@
+{
+  "contractName": "Tickets",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "owners",
+      "outputs": [
+        {
+          "name": "festival",
+          "type": "bytes32"
+        },
+        {
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "name",
+          "type": "bytes32"
+        },
+        {
+          "name": "maxTickets",
+          "type": "uint256"
+        },
+        {
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "createFestival",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "festivals",
+      "outputs": [
+        {
+          "name": "name",
+          "type": "bytes32"
+        },
+        {
+          "name": "maxTickets",
+          "type": "uint256"
+        },
+        {
+          "name": "soldTickets",
+          "type": "uint256"
+        },
+        {
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b61038d8061001e6000396000f300606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680639b3e27871461005c578063a1212285146100ed578063f749a0c514610145575b600080fd5b341561006757600080fd5b61009c600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919080359060200190919050506101d0565b6040518083600019166000191681526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019250505060405180910390f35b34156100f857600080fd5b61014360048080356000191690602001909190803590602001909190803590602001909190803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610230565b005b341561015057600080fd5b61016a60048080356000191690602001909190505061030b565b6040518086600019166000191681526020018581526020018481526020018381526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019550505050505060405180910390f35b6001602052816000526040600020818154811015156101eb57fe5b9060005260206000209060020201600091509150508060000154908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905082565b60a06040519081016040528085600019168152602001848152602001600081526020018381526020018273ffffffffffffffffffffffffffffffffffffffff1681525060008086600019166000191681526020019081526020016000206000820151816000019060001916905560208201518160010155604082015181600201556060820151816003015560808201518160040160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555090505050505050565b60006020528060005260406000206000915090508060000154908060010154908060020154908060030154908060040160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff169050855600a165627a7a72305820f1436b57e8e29b22d481f9a59efc1791e2e8c6d6c766a4d296b14548decf23f50029",
+  "deployedBytecode": "0x606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680639b3e27871461005c578063a1212285146100ed578063f749a0c514610145575b600080fd5b341561006757600080fd5b61009c600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919080359060200190919050506101d0565b6040518083600019166000191681526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019250505060405180910390f35b34156100f857600080fd5b61014360048080356000191690602001909190803590602001909190803590602001909190803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610230565b005b341561015057600080fd5b61016a60048080356000191690602001909190505061030b565b6040518086600019166000191681526020018581526020018481526020018381526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019550505050505060405180910390f35b6001602052816000526040600020818154811015156101eb57fe5b9060005260206000209060020201600091509150508060000154908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905082565b60a06040519081016040528085600019168152602001848152602001600081526020018381526020018273ffffffffffffffffffffffffffffffffffffffff1681525060008086600019166000191681526020019081526020016000206000820151816000019060001916905560208201518160010155604082015181600201556060820151816003015560808201518160040160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555090505050505050565b60006020528060005260406000206000915090508060000154908060010154908060020154908060030154908060040160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff169050855600a165627a7a72305820f1436b57e8e29b22d481f9a59efc1791e2e8c6d6c766a4d296b14548decf23f50029",
+  "sourceMap": "26:512:1:-;;;493:43;;;;;;;;26:512;;;;;;",
+  "deployedSourceMap": "26:512:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;281:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;328:161;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;232:45;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;281:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;328:161::-;441:43;;;;;;;;;450:4;441:43;;;;;;;456:10;441:43;;;;468:1;441:43;;;;471:5;441:43;;;;478:5;441:43;;;;;423:9;:15;433:4;423:15;;;;;;;;;;;;;;;;;:61;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;328:161;;;;:::o;232:45::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.18;\n\ncontract Tickets {\n  struct Ticket {\n    bytes32 festival;\n    address owner;\n  }\n\n  struct Festival {\n    bytes32 name;\n    uint maxTickets;\n    uint soldTickets;\n    uint price;\n    address owner;\n  }\n\n  mapping(bytes32 => Festival) public festivals;\n  mapping(address => Ticket[]) public owners;\n\n  function createFestival(bytes32 name, uint maxTickets, uint price, address owner) public {\n    festivals[name] = Festival(name, maxTickets, 0, price, owner);\n  }\n\n  function Tickets() {\n    // constructor\n  }\n}\n",
+  "sourcePath": "/home/lars/Documents/programming/crycket/eth/contracts/Tickets.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/home/lars/Documents/programming/crycket/eth/contracts/Tickets.sol",
+      "exportedSymbols": {
+        "Tickets": [
+          112
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".18"
+          ]
+        },
+        "id": 58,
+        "name": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            112
+          ],
+          "name": "Tickets",
+          "scope": 113
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "Tickets.Ticket",
+              "name": "Ticket",
+              "scope": 112,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "festival",
+                  "scope": 63,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bytes32",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bytes32",
+                      "type": "bytes32"
+                    },
+                    "id": 59,
+                    "name": "ElementaryTypeName",
+                    "src": "67:7:1"
+                  }
+                ],
+                "id": 60,
+                "name": "VariableDeclaration",
+                "src": "67:16:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "owner",
+                  "scope": 63,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 61,
+                    "name": "ElementaryTypeName",
+                    "src": "89:7:1"
+                  }
+                ],
+                "id": 62,
+                "name": "VariableDeclaration",
+                "src": "89:13:1"
+              }
+            ],
+            "id": 63,
+            "name": "StructDefinition",
+            "src": "47:60:1"
+          },
+          {
+            "attributes": {
+              "canonicalName": "Tickets.Festival",
+              "name": "Festival",
+              "scope": 112,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "name",
+                  "scope": 74,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bytes32",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bytes32",
+                      "type": "bytes32"
+                    },
+                    "id": 64,
+                    "name": "ElementaryTypeName",
+                    "src": "133:7:1"
+                  }
+                ],
+                "id": 65,
+                "name": "VariableDeclaration",
+                "src": "133:12:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "maxTickets",
+                  "scope": 74,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 66,
+                    "name": "ElementaryTypeName",
+                    "src": "151:4:1"
+                  }
+                ],
+                "id": 67,
+                "name": "VariableDeclaration",
+                "src": "151:15:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "soldTickets",
+                  "scope": 74,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 68,
+                    "name": "ElementaryTypeName",
+                    "src": "172:4:1"
+                  }
+                ],
+                "id": 69,
+                "name": "VariableDeclaration",
+                "src": "172:16:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "price",
+                  "scope": 74,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 70,
+                    "name": "ElementaryTypeName",
+                    "src": "194:4:1"
+                  }
+                ],
+                "id": 71,
+                "name": "VariableDeclaration",
+                "src": "194:10:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "owner",
+                  "scope": 74,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 72,
+                    "name": "ElementaryTypeName",
+                    "src": "210:7:1"
+                  }
+                ],
+                "id": 73,
+                "name": "VariableDeclaration",
+                "src": "210:13:1"
+              }
+            ],
+            "id": 74,
+            "name": "StructDefinition",
+            "src": "111:117:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "festivals",
+              "scope": 112,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(bytes32 => struct Tickets.Festival storage ref)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(bytes32 => struct Tickets.Festival storage ref)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bytes32",
+                      "type": "bytes32"
+                    },
+                    "id": 75,
+                    "name": "ElementaryTypeName",
+                    "src": "240:7:1"
+                  },
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Festival",
+                      "referencedDeclaration": 74,
+                      "type": "struct Tickets.Festival storage pointer"
+                    },
+                    "id": 76,
+                    "name": "UserDefinedTypeName",
+                    "src": "251:8:1"
+                  }
+                ],
+                "id": 77,
+                "name": "Mapping",
+                "src": "232:28:1"
+              }
+            ],
+            "id": 78,
+            "name": "VariableDeclaration",
+            "src": "232:45:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "owners",
+              "scope": 112,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(address => struct Tickets.Ticket storage ref[] storage ref)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(address => struct Tickets.Ticket storage ref[] storage ref)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 79,
+                    "name": "ElementaryTypeName",
+                    "src": "289:7:1"
+                  },
+                  {
+                    "attributes": {
+                      "length": null,
+                      "type": "struct Tickets.Ticket storage ref[] storage pointer"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "Ticket",
+                          "referencedDeclaration": 63,
+                          "type": "struct Tickets.Ticket storage pointer"
+                        },
+                        "id": 80,
+                        "name": "UserDefinedTypeName",
+                        "src": "300:6:1"
+                      }
+                    ],
+                    "id": 81,
+                    "name": "ArrayTypeName",
+                    "src": "300:8:1"
+                  }
+                ],
+                "id": 82,
+                "name": "Mapping",
+                "src": "281:28:1"
+              }
+            ],
+            "id": 83,
+            "name": "VariableDeclaration",
+            "src": "281:42:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "createFestival",
+              "payable": false,
+              "scope": 112,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "name",
+                      "scope": 107,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 84,
+                        "name": "ElementaryTypeName",
+                        "src": "352:7:1"
+                      }
+                    ],
+                    "id": 85,
+                    "name": "VariableDeclaration",
+                    "src": "352:12:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "maxTickets",
+                      "scope": 107,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 86,
+                        "name": "ElementaryTypeName",
+                        "src": "366:4:1"
+                      }
+                    ],
+                    "id": 87,
+                    "name": "VariableDeclaration",
+                    "src": "366:15:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "price",
+                      "scope": 107,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 88,
+                        "name": "ElementaryTypeName",
+                        "src": "383:4:1"
+                      }
+                    ],
+                    "id": 89,
+                    "name": "VariableDeclaration",
+                    "src": "383:10:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "owner",
+                      "scope": 107,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 90,
+                        "name": "ElementaryTypeName",
+                        "src": "395:7:1"
+                      }
+                    ],
+                    "id": 91,
+                    "name": "VariableDeclaration",
+                    "src": "395:13:1"
+                  }
+                ],
+                "id": 92,
+                "name": "ParameterList",
+                "src": "351:58:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 93,
+                "name": "ParameterList",
+                "src": "417:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct Tickets.Festival storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct Tickets.Festival storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 78,
+                                  "type": "mapping(bytes32 => struct Tickets.Festival storage ref)",
+                                  "value": "festivals"
+                                },
+                                "id": 94,
+                                "name": "Identifier",
+                                "src": "423:9:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 85,
+                                  "type": "bytes32",
+                                  "value": "name"
+                                },
+                                "id": 95,
+                                "name": "Identifier",
+                                "src": "433:4:1"
+                              }
+                            ],
+                            "id": 96,
+                            "name": "IndexAccess",
+                            "src": "423:15:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "struct Tickets.Festival memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_bytes32",
+                                      "typeString": "bytes32"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_rational_0_by_1",
+                                      "typeString": "int_const 0"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_address",
+                                      "typeString": "address"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 74,
+                                  "type": "type(struct Tickets.Festival storage pointer)",
+                                  "value": "Festival"
+                                },
+                                "id": 97,
+                                "name": "Identifier",
+                                "src": "441:8:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 85,
+                                  "type": "bytes32",
+                                  "value": "name"
+                                },
+                                "id": 98,
+                                "name": "Identifier",
+                                "src": "450:4:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 87,
+                                  "type": "uint256",
+                                  "value": "maxTickets"
+                                },
+                                "id": 99,
+                                "name": "Identifier",
+                                "src": "456:10:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "30",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 0",
+                                  "value": "0"
+                                },
+                                "id": 100,
+                                "name": "Literal",
+                                "src": "468:1:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 89,
+                                  "type": "uint256",
+                                  "value": "price"
+                                },
+                                "id": 101,
+                                "name": "Identifier",
+                                "src": "471:5:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 91,
+                                  "type": "address",
+                                  "value": "owner"
+                                },
+                                "id": 102,
+                                "name": "Identifier",
+                                "src": "478:5:1"
+                              }
+                            ],
+                            "id": 103,
+                            "name": "FunctionCall",
+                            "src": "441:43:1"
+                          }
+                        ],
+                        "id": 104,
+                        "name": "Assignment",
+                        "src": "423:61:1"
+                      }
+                    ],
+                    "id": 105,
+                    "name": "ExpressionStatement",
+                    "src": "423:61:1"
+                  }
+                ],
+                "id": 106,
+                "name": "Block",
+                "src": "417:72:1"
+              }
+            ],
+            "id": 107,
+            "name": "FunctionDefinition",
+            "src": "328:161:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": true,
+              "modifiers": [
+                null
+              ],
+              "name": "Tickets",
+              "payable": false,
+              "scope": 112,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 108,
+                "name": "ParameterList",
+                "src": "509:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 109,
+                "name": "ParameterList",
+                "src": "512:0:1"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 110,
+                "name": "Block",
+                "src": "512:24:1"
+              }
+            ],
+            "id": 111,
+            "name": "FunctionDefinition",
+            "src": "493:43:1"
+          }
+        ],
+        "id": 112,
+        "name": "ContractDefinition",
+        "src": "26:512:1"
+      }
+    ],
+    "id": 113,
+    "name": "SourceUnit",
+    "src": "0:539:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x8f0483125fcb9aaaefa9209d8e9d7b9c8b9fb90f"
+    }
+  },
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-01-14T22:10:42.514Z"
+}
